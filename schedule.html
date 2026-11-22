@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Facility Schedule - TurfGo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-manager">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="manage-slots.html">Manage Slots</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="check-in.html">Check-in</a>
+                <a href="schedule.html" class="active">Schedule</a>
+                <a href="profile.html">Profile</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Daily Schedule</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Manager</span>
+                    <span>Jahid Hasan</span>
+                    <div class="avatar">JH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Facility Match Schedule</h1>
+                </div>
+                <form class="filter-bar" action="schedule.html" method="GET">
+                    <label for="sched_date">Date:</label>
+                    <input type="date" id="sched_date" name="date" value="2026-10-26">
+                    <input type="submit" value="Load Schedule" class="btn">
+                </form>
+                <section class="card">
+                    <h3 class="card-title">Matches Scheduled for Monday, 26 October 2026</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Turf Ground</th>
+                                <th>Location</th>
+                                <th>Time Slot</th>
+                                <th>Customer / Team Lead</th>
+                                <th>Booking ID</th>
+                                <th>Match Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Green Field</strong></td>
+                                <td>Mirpur, Dhaka</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>Rifat Hasan (01722222222)</td>
+                                <td>BKG98214</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Victory Turf</strong></td>
+                                <td>Banani, Dhaka</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>Tanvir Ahmed (01733333333)</td>
+                                <td>BKG87231</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Play Arena</strong></td>
+                                <td>Uttara, Dhaka</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>Mahmudul Hasan (01755555555)</td>
+                                <td>BKG76150</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Green Field</strong></td>
+                                <td>Mirpur, Dhaka</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>Arif Rahman (01766666666)</td>
+                                <td>BKG54109</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

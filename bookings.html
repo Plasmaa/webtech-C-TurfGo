@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookings Management - TurfGo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-manager">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="manage-slots.html">Manage Slots</a>
+                <a href="bookings.html" class="active">Bookings</a>
+                <a href="check-in.html">Check-in</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="profile.html">Profile</a>
+               
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Bookings Management</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Manager</span>
+                    <span>Jahid Hasan</span>
+                    <div class="avatar">JH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Player Bookings Verification &amp; Approval</h1>
+                </div>
+                <div class="tab-bar">
+                    <a href="bookings.html?status=all" class="active">All Bookings (16)</a>
+                    <a href="bookings.html?status=confirmed">Confirmed (10)</a>
+                    <a href="bookings.html?status=pending">Pending Manager Approval (3)</a>
+                    <a href="bookings.html?status=cancelled">Cancelled (3)</a>
+                </div>
+                <section class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Turf Ground</th>
+                                <th>Match Date</th>
+                                <th>Time Slot</th>
+                                <th>Player Name</th>
+                                <th>Booking Status</th>
+                                <th>Manager Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>BKG65190</strong></td>
+                                <td>Play Arena</td>
+                                <td>27 Oct 2026</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>Saif Karim (01744444444)</td>
+                                <td><span class="badge badge-pending">Pending</span></td>
+                                <td>
+                                    <a href="bookings.html?action=confirm&amp;id=65190" class="btn btn-sm">Approve / Confirm</a>
+                                    <a href="bookings.html?action=cancel&amp;id=65190" class="btn btn-sm btn-danger">Reject / Cancel</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG54109</strong></td>
+                                <td>Green Field</td>
+                                <td>27 Oct 2026</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td>Arif Rahman (01766666666)</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td>
+                                    <a href="bookings.html?action=cancel&amp;id=54109" class="btn btn-sm btn-danger">Cancel Match</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG98214</strong></td>
+                                <td>Green Field</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>Rifat Hasan (01722222222)</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td>
+                                    <a href="check-in.html?q=BKG98214" class="btn btn-sm">Proceed to Check-in</a>
+                                    <a href="bookings.html?action=cancel&amp;id=98214" class="btn btn-sm btn-danger">Cancel</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG87231</strong></td>
+                                <td>Victory Turf</td>
+                                <td>26 Oct 2026</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>Tanvir Ahmed (01733333333)</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                                <td>
+                                    <em>Match Finished (Checked In)</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG43012</strong></td>
+                                <td>Play Arena</td>
+                                <td>25 Oct 2026</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>Mahmudul Hasan (01755555555)</td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                                <td>
+                                    <em>Booking Cancelled</em>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

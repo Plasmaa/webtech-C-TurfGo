@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Check-in - TurfGo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-manager">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="manage-slots.html">Manage Slots</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="check-in.html" class="active">Check-in</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="profile.html">Profile</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Player Check-in</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Manager</span>
+                    <span>Jahid Hasan</span>
+                    <div class="avatar">JH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Player Arrival Verification &amp; Match Check-in</h1>
+                </div>
+                <section>
+                    <h3 class="card-title">Daily Check-in Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="label">Total Bookings</div>
+                            <div class="value">42</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Today's Bookings</div>
+                            <div class="value">4</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Ready for Check-in</div>
+                            <div class="value">3</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Completed Check-ins</div>
+                            <div class="value">28</div>
+                        </div>
+                    </div>
+                </section>
+                <form class="filter-bar" action="check-in.html" method="GET">
+                    <label for="search_query">Search:</label>
+                    <input type="text" id="search_query" name="q" placeholder="Enter Booking ID, Customer Name, or Phone...">
+                    <input type="submit" value="Search Booking" class="btn">
+                    <a href="check-in.html" class="btn btn-outline">Clear Search</a>
+                </form>
+                <div class="tab-bar">
+                    <a href="check-in.html?filter=all" class="active">All Players (42)</a>
+                    <a href="check-in.html?filter=ready">Ready for Check-in (Confirmed)</a>
+                    <a href="check-in.html?filter=today">Today's Matches</a>
+                    <a href="check-in.html?filter=completed">Completed / Checked-in</a>
+                    <a href="check-in.html?filter=cancelled">Cancelled</a>
+                </div>
+                <section class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Player / Customer Details</th>
+                                <th>Turf Ground</th>
+                                <th>Match Date</th>
+                                <th>Time Slot</th>
+                                <th>Amount Due</th>
+                                <th>Booking Status</th>
+                                <th>Check-in Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>BKG98214</strong></td>
+                                <td>
+                                    <strong>Rifat Hasan</strong><br>
+                                    Phone: 01722222222<br>
+                                    Email: rifat@example.com
+                                </td>
+                                <td>Green Field</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td>
+                                    <form action="check-in.html" method="POST">
+                                        <input type="hidden" name="booking_id" value="98214">
+                                        <input type="submit" value="✔ Confirm Player Check-in" class="btn btn-sm">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG54109</strong></td>
+                                <td>
+                                    <strong>Arif Rahman</strong><br>
+                                    Phone: 01766666666<br>
+                                    Email: arif@example.com
+                                </td>
+                                <td>Green Field</td>
+                                <td>27 Oct 2026</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td>
+                                    <form action="check-in.html" method="POST">
+                                        <input type="hidden" name="booking_id" value="54109">
+                                        <input type="submit" value="✔ Confirm Player Check-in" class="btn btn-sm">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG65190</strong></td>
+                                <td>
+                                    <strong>Saif Karim</strong><br>
+                                    Phone: 01744444444<br>
+                                    Email: saif@example.com
+                                </td>
+                                <td>Play Arena</td>
+                                <td>27 Oct 2026</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-pending">Pending</span></td>
+                                <td>
+                                    <em>Needs confirmation in Bookings tab first</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG87231</strong></td>
+                                <td>
+                                    <strong>Tanvir Ahmed</strong><br>
+                                    Phone: 01733333333<br>
+                                    Email: tanvir@example.com
+                                </td>
+                                <td>Victory Turf</td>
+                                <td>26 Oct 2026</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>৳1,000.00</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                                <td>
+                                    <strong>✔ Checked In (Paid)</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG43012</strong></td>
+                                <td>
+                                    <strong>Mahmudul Hasan</strong><br>
+                                    Phone: 01755555555<br>
+                                    Email: mahmud@example.com
+                                </td>
+                                <td>Play Arena</td>
+                                <td>25 Oct 2026</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                                <td>
+                                    <em>Cancelled</em>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Slots - TurfGo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-manager">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="manage-slots.html" class="active">Manage Slots</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="check-in.html">Check-in</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="profile.html">Profile</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Manage Slots</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Manager</span>
+                    <span>Jahid Hasan</span>
+                    <div class="avatar">JH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Hourly Slot Availability &amp; Management</h1>
+                </div>
+                <form class="filter-bar" action="manage-slots.html" method="GET">
+                    <label for="sel_turf">Select Turf Ground:</label>
+                    <select id="sel_turf" name="turf">
+                        <option value="1" selected>Green Field (Mirpur, Dhaka)</option>
+                        <option value="2">Victory Turf (Banani, Dhaka)</option>
+                        <option value="3">Play Arena (Uttara, Dhaka)</option>
+                    </select>
+                    <label for="sel_date">Select Date:</label>
+                    <input type="date" id="sel_date" name="date" value="2026-10-26">
+                    <input type="submit" value="Check Slot Schedule" class="btn">
+                </form>
+                <section class="card">
+                    <h3 class="card-title">Schedule for Green Field on 26 Oct 2026</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Slot Hours</th>
+                                <th>Slot Window</th>
+                                <th>Availability Status</th>
+                                <th>Booked By / Remarks</th>
+                                <th>Slot Control Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>06:00 - 07:00</td>
+                                <td>6:00 AM - 7:00 AM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=06:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>07:00 - 08:00</td>
+                                <td>7:00 AM - 8:00 AM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=07:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>08:00 - 09:00</td>
+                                <td>8:00 AM - 9:00 AM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=08:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>09:00 - 10:00</td>
+                                <td>9:00 AM - 10:00 AM</td>
+                                <td><span class="badge badge-booked">Maintenance / Blocked</span></td>
+                                <td>Ground Watering &amp; Maintenance</td>
+                                <td><a href="manage-slots.html?action=unblock&amp;time=09:00" class="btn btn-sm">Open Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>10:00 - 11:00</td>
+                                <td>10:00 AM - 11:00 AM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=10:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 12:00</td>
+                                <td>11:00 AM - 12:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=11:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>12:00 - 13:00</td>
+                                <td>12:00 PM - 1:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=12:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>13:00 - 14:00</td>
+                                <td>1:00 PM - 2:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=13:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>14:00 - 15:00</td>
+                                <td>2:00 PM - 3:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=14:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>15:00 - 16:00</td>
+                                <td>3:00 PM - 4:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=15:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>16:00 - 17:00</td>
+                                <td>4:00 PM - 5:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=16:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>17:00 - 18:00</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=17:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>18:00 - 19:00</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td><span class="badge badge-booked">Booked (Confirmed)</span></td>
+                                <td>Rifat Hasan (BKG98214)</td>
+                                <td><a href="check-in.html?q=BKG98214" class="btn btn-sm">Check-in Player</a></td>
+                            </tr>
+                            <tr>
+                                <td>19:00 - 20:00</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=19:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>20:00 - 21:00</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=20:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                            <tr>
+                                <td>21:00 - 22:00</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td><span class="badge badge-available">Available</span></td>
+                                <td>—</td>
+                                <td><a href="manage-slots.html?action=block&amp;time=21:00" class="btn btn-sm btn-danger">Block Slot</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

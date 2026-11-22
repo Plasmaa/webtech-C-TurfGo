@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Dashboard - TurfGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-manager">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="manage-slots.html">Manage Slots</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="check-in.html">Check-in</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="profile.html">Profile</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Manager Dashboard</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Manager</span>
+                    <span>Jahid Hasan</span>
+                    <div class="avatar">JH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Manager Daily Dashboard</h1>
+                </div>
+                <section>
+                    <h3 class="card-title">Today's Activity Metrics (26 Oct 2026)</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="label">Today's Bookings</div>
+                            <div class="value">4</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Upcoming Matches</div>
+                            <div class="value">12</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Checked-in Today</div>
+                            <div class="value">2</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="label">Cancelled Today</div>
+                            <div class="value">1</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="card">
+                    <h3 class="card-title">Today's Field Matches</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time Slot</th>
+                                <th>Turf Ground</th>
+                                <th>Customer / Team Lead</th>
+                                <th>Booking Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>Green Field</td>
+                                <td>Rifat Hasan</td>
+                                <td><span class="badge badge-confirmed">Confirmed (Ready for Check-in)</span></td>
+                                <td><a href="check-in.html" class="btn btn-sm">Go to Check-in &raquo;</a></td>
+                            </tr>
+                            <tr>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>Victory Turf</td>
+                                <td>Tanvir Ahmed</td>
+                                <td><span class="badge badge-completed">Completed (Checked In)</span></td>
+                                <td><em>Checked in</em></td>
+                            </tr>
+                            <tr>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>Play Arena</td>
+                                <td>Mahmudul Hasan</td>
+                                <td><span class="badge badge-completed">Completed (Checked In)</span></td>
+                                <td><em>Checked in</em></td>
+                            </tr>
+                            <tr>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>Play Arena</td>
+                                <td>Saif Karim</td>
+                                <td><span class="badge badge-pending">Pending Confirmation</span></td>
+                                <td><a href="bookings.html" class="btn btn-sm">Confirm Booking &raquo;</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="card">
+                    <h3 class="card-title">Manager Duties &amp; Quick Links</h3>
+                    <ul>
+                        <li><a href="check-in.html">Verify Player Arrival &amp; Process Check-in</a></li>
+                        <li><a href="manage-slots.html">View &amp; Manage Hourly Slot Availability</a></li>
+                        <li><a href="bookings.html">Review Pending Match Booking Requests</a></li>
+                        <li><a href="schedule.html">Inspect Full Day Facility Schedule</a></li>
+                    </ul>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
