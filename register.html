@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - TurfGo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-box">
+            <div class="auth-logo">⚽ TurfGo</div>
+            <div class="auth-sub">Create a Player Account</div>
+            <form action="login.html" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Rifat Hasan">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="017XXXXXXXX">
+                </div>
+                <div class="form-group">
+                    <label for="address">Present Address</label>
+                    <textarea id="address" name="address" rows="3" cols="42" placeholder="House, Road, Area (e.g. Mirpur, Dhaka)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Primary Sport of Interest</label>
+                    <label for="sport_football">
+                        <input type="radio" id="sport_football" name="sport" value="football" checked> Football / Futsal
+                    </label>
+                    <label for="sport_cricket">
+                        <input type="radio" id="sport_cricket" name="sport" value="cricket"> Cricket
+                    </label>
+                    <label for="sport_both">
+                        <input type="radio" id="sport_both" name="sport" value="both"> Both
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password <small>(Minimum 6 characters)</small></label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> I agree to TurfGo rules, ground conduct policies, and terms of service.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Complete Registration" class="btn btn-block">
+                </div>
+                <div class="form-group">
+                    <input type="reset" value="Reset Form" class="btn btn-block btn-outline">
+                </div>
+            </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+                <p><a href="index.html">Home</a></p>
+                <p>&copy; 2026 TurfGo - Basic HTML Prototype Version.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

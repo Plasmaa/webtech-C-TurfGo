@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - TurfGo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-box">
+            <div class="auth-logo">⚽ TurfGo</div>
+            <div class="auth-sub">Book your turf, hassle free.</div>
+            <form action="player/dashboard.html" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role (Select Portal to Open)</label>
+                    <select id="role" name="role">
+                        <option value="player">Player</option>
+                        <option value="manager">Turf Manager</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="remember">
+                        <input type="checkbox" id="remember" name="remember"> Remember me on this browser
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login to TurfGo" class="btn btn-block">
+                </div>
+                <div class="form-group">
+                    <input type="reset" value="Clear Fields" class="btn btn-block btn-outline">
+                </div>
+            </form>
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="register.html">Register as a Player</a></p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="player/dashboard.html">Go to Player Dashboard</a></p>
+                <p><a href="manager/dashboard.html">Go to Manager Dashboard</a></p>
+                <p><a href="admin/dashboard.html">Go to Admin Dashboard</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
