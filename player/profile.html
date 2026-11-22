@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Player Profile - TurfGo</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="theme-player">
     <div class="app">
         <aside class="sidebar">
@@ -23,8 +25,8 @@
                 <div class="topbar-title">Player Profile</div>
                 <div class="topbar-user">
                     <span class="role-badge">Player</span>
-                    <span>Rifat Hasan</span>
-                    <div class="avatar">RH</div>
+                    <span>Jisan Al annan</span>
+                    <div class="avatar">JB</div>
                 </div>
             </header>
             <main class="content">
@@ -36,11 +38,11 @@
                     <form action="profile.html" method="POST">
                         <div class="form-group">
                             <label for="ply_name">Full Name</label>
-                            <input type="text" id="ply_name" name="name" value="Rifat Hasan" required>
+                            <input type="text" id="ply_name" name="name" value="Jisan Al banna" required>
                         </div>
                         <div class="form-group">
                             <label for="ply_email">Email Address <em>(Registered login email)</em></label>
-                            <input type="email" id="ply_email" name="email" value="rifat@example.com" readonly>
+                            <input type="email" id="ply_email" name="email" value="jisan@example.com" readonly>
                         </div>
                         <div class="form-group">
                             <label for="ply_phone">Phone Number</label>
@@ -59,22 +61,25 @@
                     <form action="profile.html" method="POST">
                         <div class="form-group">
                             <label for="curr_pass">Current Password</label>
-                            <input type="password" id="curr_pass" name="current_password" required placeholder="Enter current password">
+                            <input type="password" id="curr_pass" name="current_password" required
+                                placeholder="Enter current password">
                         </div>
                         <div class="form-group">
                             <label for="new_pass">New Password</label>
-                            <input type="password" id="new_pass" name="new_password" required minlength="6" placeholder="Minimum 6 characters">
+                            <input type="password" id="new_pass" name="new_password" required minlength="6"
+                                placeholder="Minimum 6 characters">
                         </div>
                         <div class="form-group">
                             <label for="conf_pass">Confirm New Password</label>
-                            <input type="password" id="conf_pass" name="confirm_password" required minlength="6" placeholder="Re-type new password">
+                            <input type="password" id="conf_pass" name="confirm_password" required minlength="6"
+                                placeholder="Re-type new password">
                         </div>
                         <input type="submit" value="Change Password" class="btn">
                     </form>
                 </section>
-                <footer class="empty-state">&copy; 2026 TurfGo - Player Portal (Basic HTML Version).</footer>
             </main>
         </div>
     </div>
 </body>
+
 </html>
