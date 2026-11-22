@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Turf &amp; Pricing Management - TurfGo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="turf-pricing.html" class="active">Turf &amp; Pricing</a>
+                <a href="staff-users.html">Staff &amp; Users</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="payments.html">Payments</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html">Settings</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Turf &amp; Pricing Management</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Admin</span>
+                    <span>Admin Owner</span>
+                    <div class="avatar">AO</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Turf &amp; Hourly Pricing Management</h1>
+                </div>
+
+                <section class="card">
+                    <h3 class="card-title">Add New Turf Ground</h3>
+                    <form action="turf-pricing.html" method="POST">
+                        <div class="form-group">
+                            <label for="turf_name">Turf Name:</label>
+                            <input type="text" id="turf_name" name="name" required placeholder="e.g. Dream Arena">
+                        </div>
+                        <div class="form-group">
+                            <label for="turf_location">Location:</label>
+                            <input type="text" id="turf_location" name="location" required placeholder="e.g. Dhanmondi, Dhaka">
+                        </div>
+                        <div class="form-group">
+                            <label for="turf_price">Hourly Rate (BDT):</label>
+                            <input type="number" id="turf_price" name="price" required min="100" step="50" placeholder="e.g. 1200">
+                        </div>
+                        <div class="form-group">
+                            <label for="turf_status">Initial Status:</label>
+                            <select id="turf_status" name="status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="+ Add Turf Ground" class="btn">
+                        <input type="reset" value="Reset Fields" class="btn btn-outline">
+                    </form>
+                </section>
+
+                <section class="card">
+                    <h3 class="card-title">All Registered Turfs</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Turf ID</th>
+                                <th>Turf Name</th>
+                                <th>Location</th>
+                                <th>Hourly Rate</th>
+                                <th>Current Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Green Field</strong></td>
+                                <td>Mirpur, Dhaka</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="turf-pricing.html?action=edit&amp;id=1" class="btn btn-sm">Edit</a>
+                                    <a href="turf-pricing.html?action=toggle&amp;id=1" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="turf-pricing.html?action=delete&amp;id=1" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>Victory Turf</strong></td>
+                                <td>Banani, Dhaka</td>
+                                <td>৳1,000.00</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="turf-pricing.html?action=edit&amp;id=2" class="btn btn-sm">Edit</a>
+                                    <a href="turf-pricing.html?action=toggle&amp;id=2" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="turf-pricing.html?action=delete&amp;id=2" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>Play Arena</strong></td>
+                                <td>Uttara, Dhaka</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="turf-pricing.html?action=edit&amp;id=3" class="btn btn-sm">Edit</a>
+                                    <a href="turf-pricing.html?action=toggle&amp;id=3" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="turf-pricing.html?action=delete&amp;id=3" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>Goal Point</strong></td>
+                                <td>Dhanmondi, Dhaka</td>
+                                <td>৳800.00</td>
+                                <td><span class="badge badge-inactive">Inactive</span></td>
+                                <td>
+                                    <a href="turf-pricing.html?action=edit&amp;id=4" class="btn btn-sm">Edit</a>
+                                    <a href="turf-pricing.html?action=toggle&amp;id=4" class="btn btn-sm">Activate</a>
+                                    <a href="turf-pricing.html?action=delete&amp;id=4" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <footer class="empty-state">&copy; 2026 TurfGo - Administrator Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

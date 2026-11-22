@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff &amp; Users Management - TurfGo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="turf-pricing.html">Turf &amp; Pricing</a>
+                <a href="staff-users.html" class="active">Staff &amp; Users</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="payments.html">Payments</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html">Settings</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Staff &amp; Users Management</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Admin</span>
+                    <span>Admin Owner</span>
+                    <div class="avatar">AO</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Staff &amp; System User Management</h1>
+                </div>
+
+                <section class="card">
+                    <h3 class="card-title">Create Staff / Admin Account</h3>
+                    <form action="staff-users.html" method="POST">
+                        <div class="form-group">
+                            <label for="user_name">Full Name:</label>
+                            <input type="text" id="user_name" name="name" required placeholder="e.g. Jahid Hasan">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Email Address:</label>
+                            <input type="email" id="user_email" name="email" required placeholder="staff@turfgo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_phone">Phone Number:</label>
+                            <input type="tel" id="user_phone" name="phone" placeholder="017XXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_role">Assigned Role:</label>
+                            <select id="user_role" name="role" required>
+                                <option value="manager">Turf Manager</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="default_pass">Default Password:</label>
+                            <input type="text" id="default_pass" name="password" value="welcome123" readonly>
+                        </div>
+                        <input type="submit" value="+ Create Staff User" class="btn">
+                        <input type="reset" value="Reset Fields" class="btn btn-outline">
+                    </form>
+                </section>
+
+                <section class="card">
+                    <h3 class="card-title">All Registered Users (Staff &amp; Players)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Full Name</th>
+                                <th>Role</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Admin Owner</strong></td>
+                                <td>Admin</td>
+                                <td>admin@turfgo.com</td>
+                                <td>01700000000</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td><em>(Primary Admin)</em></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>Jahid Hasan</strong></td>
+                                <td>Manager</td>
+                                <td>jahid@turfgo.com</td>
+                                <td>01711111111</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="staff-users.html?toggle=2" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="staff-users.html?delete=2" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>Rifat Hasan</strong></td>
+                                <td>Player</td>
+                                <td>rifat@example.com</td>
+                                <td>01722222222</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="staff-users.html?toggle=3" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="staff-users.html?delete=3" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>Tanvir Ahmed</strong></td>
+                                <td>Player</td>
+                                <td>tanvir@example.com</td>
+                                <td>01733333333</td>
+                                <td><span class="badge badge-active">Active</span></td>
+                                <td>
+                                    <a href="staff-users.html?toggle=4" class="btn btn-sm btn-danger">Deactivate</a>
+                                    <a href="staff-users.html?delete=4" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>Saif Karim</strong></td>
+                                <td>Player</td>
+                                <td>saif@example.com</td>
+                                <td>01744444444</td>
+                                <td><span class="badge badge-inactive">Inactive</span></td>
+                                <td>
+                                    <a href="staff-users.html?toggle=5" class="btn btn-sm">Activate</a>
+                                    <a href="staff-users.html?delete=5" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <footer class="empty-state">&copy; 2026 TurfGo - Administrator Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

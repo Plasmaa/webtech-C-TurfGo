@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Bookings - TurfGo Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="turf-pricing.html">Turf &amp; Pricing</a>
+                <a href="staff-users.html">Staff &amp; Users</a>
+                <a href="bookings.html" class="active">Bookings</a>
+                <a href="payments.html">Payments</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html">Settings</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">All Bookings</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Admin</span>
+                    <span>Admin Owner</span>
+                    <div class="avatar">AO</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Master Bookings Directory</h1>
+                </div>
+
+                <div class="tab-bar">
+                    <a href="bookings.html?status=all" class="active">All (42)</a>
+                    <a href="bookings.html?status=confirmed">Confirmed (24)</a>
+                    <a href="bookings.html?status=pending">Pending Approval (6)</a>
+                    <a href="bookings.html?status=completed">Completed (8)</a>
+                    <a href="bookings.html?status=cancelled">Cancelled (4)</a>
+                </div>
+
+                <form class="filter-bar" action="bookings.html" method="GET">
+                    <label for="filter_date">Date:</label>
+                    <input type="date" id="filter_date" name="date" value="2026-10-26">
+                    <label for="filter_turf">Turf:</label>
+                    <select id="filter_turf" name="turf">
+                        <option value="all">All Turfs</option>
+                        <option value="1">Green Field (Mirpur)</option>
+                        <option value="2">Victory Turf (Banani)</option>
+                        <option value="3">Play Arena (Uttara)</option>
+                    </select>
+                    <input type="submit" value="Apply Filter" class="btn">
+                    <a href="bookings.html" class="btn btn-outline">Clear</a>
+                </form>
+
+                <section class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Turf Ground</th>
+                                <th>Date</th>
+                                <th>Time Slot</th>
+                                <th>Customer / Player</th>
+                                <th>Total Amount</th>
+                                <th>Booking Status</th>
+                                <th>Payment Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>BKG98214</strong></td>
+                                <td>Green Field</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>Rifat Hasan (01722222222)</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td><span class="badge badge-unpaid">Unpaid (At Field)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG87231</strong></td>
+                                <td>Victory Turf</td>
+                                <td>26 Oct 2026</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>Tanvir Ahmed (01733333333)</td>
+                                <td>৳1,000.00</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                                <td><span class="badge badge-paid">Paid (Cash)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG76150</strong></td>
+                                <td>Play Arena</td>
+                                <td>26 Oct 2026</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>Mahmudul Hasan (01755555555)</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                                <td><span class="badge badge-paid">Paid (bKash)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG65190</strong></td>
+                                <td>Play Arena</td>
+                                <td>27 Oct 2026</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>Saif Karim (01744444444)</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-pending">Pending</span></td>
+                                <td><span class="badge badge-unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG54109</strong></td>
+                                <td>Green Field</td>
+                                <td>27 Oct 2026</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td>Arif Rahman (01766666666)</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td><span class="badge badge-unpaid">Unpaid (At Field)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG43012</strong></td>
+                                <td>Play Arena</td>
+                                <td>25 Oct 2026</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>Mahmudul Hasan (01755555555)</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <footer class="empty-state">&copy; 2026 TurfGo - Administrator Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
