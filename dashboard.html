@@ -2,111 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manager Dashboard - TurfGo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard - TurfGo</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="theme-manager">
+<body>
     <div class="app">
         <aside class="sidebar">
             <div class="sidebar-logo">⚽ TurfGo</div>
             <nav>
                 <a href="dashboard.html" class="active">Dashboard</a>
-                <a href="manage-slots.html">Manage Slots</a>
+                <a href="turf-pricing.html">Turf &amp; Pricing</a>
+                <a href="staff-users.html">Staff &amp; Users</a>
                 <a href="bookings.html">Bookings</a>
-                <a href="check-in.html">Check-in</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="profile.html">Profile</a>
+                <a href="payments.html">Payments</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html">Settings</a>
+                <a href="../index.html">Main Index</a>
                 <a href="../logout.html">Logout</a>
             </nav>
         </aside>
         <div class="main">
             <header class="topbar">
-                <div class="topbar-title">Manager Dashboard</div>
+                <div class="topbar-title">Admin Dashboard</div>
                 <div class="topbar-user">
-                    <span class="role-badge">Manager</span>
-                    <span>Jahid Hasan</span>
-                    <div class="avatar">JH</div>
+                    <span class="role-badge">Admin</span>
+                    <span>Admin Owner</span>
+                    <div class="avatar">AO</div>
                 </div>
             </header>
             <main class="content">
                 <div class="page-header">
-                    <h1>Manager Daily Dashboard</h1>
+                    <h1>Admin Overview &amp; Key Metrics</h1>
                 </div>
+
                 <section>
-                    <h3 class="card-title">Today's Activity Metrics (26 Oct 2026)</h3>
+                    <h3 class="card-title">System Performance Summary</h3>
                     <div class="stats-grid">
                         <div class="stat-card">
+                            <div class="label">Total Bookings</div>
+                            <div class="value">42</div>
+                        </div>
+                        <div class="stat-card">
                             <div class="label">Today's Bookings</div>
-                            <div class="value">4</div>
+                            <div class="value">5</div>
                         </div>
                         <div class="stat-card">
-                            <div class="label">Upcoming Matches</div>
-                            <div class="value">12</div>
+                            <div class="label">Total Revenue</div>
+                            <div class="value">৳52,400</div>
                         </div>
                         <div class="stat-card">
-                            <div class="label">Checked-in Today</div>
-                            <div class="value">2</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="label">Cancelled Today</div>
-                            <div class="value">1</div>
+                            <div class="label">Active Turfs</div>
+                            <div class="value">3</div>
                         </div>
                     </div>
                 </section>
+
                 <section class="card">
-                    <h3 class="card-title">Today's Field Matches</h3>
+                    <h3 class="card-title">Recent Bookings</h3>
                     <table>
                         <thead>
                             <tr>
+                                <th>Booking ID</th>
+                                <th>Turf Name</th>
+                                <th>Booking Date</th>
                                 <th>Time Slot</th>
-                                <th>Turf Ground</th>
-                                <th>Customer / Team Lead</th>
-                                <th>Booking Status</th>
-                                <th>Action</th>
+                                <th>Customer</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>6:00 PM - 7:00 PM</td>
+                                <td><strong>BKG98214</strong></td>
                                 <td>Green Field</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
                                 <td>Rifat Hasan</td>
-                                <td><span class="badge badge-confirmed">Confirmed (Ready for Check-in)</span></td>
-                                <td><a href="check-in.html" class="btn btn-sm">Go to Check-in &raquo;</a></td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
                             </tr>
                             <tr>
-                                <td>7:00 PM - 8:00 PM</td>
+                                <td><strong>BKG87231</strong></td>
                                 <td>Victory Turf</td>
+                                <td>26 Oct 2026</td>
+                                <td>7:00 PM - 8:00 PM</td>
                                 <td>Tanvir Ahmed</td>
-                                <td><span class="badge badge-completed">Completed (Checked In)</span></td>
-                                <td><em>Checked in</em></td>
+                                <td><span class="badge badge-completed">Completed</span></td>
                             </tr>
                             <tr>
+                                <td><strong>BKG65190</strong></td>
+                                <td>Play Arena</td>
+                                <td>27 Oct 2026</td>
                                 <td>8:00 PM - 9:00 PM</td>
-                                <td>Play Arena</td>
-                                <td>Mahmudul Hasan</td>
-                                <td><span class="badge badge-completed">Completed (Checked In)</span></td>
-                                <td><em>Checked in</em></td>
+                                <td>Saif Karim</td>
+                                <td><span class="badge badge-pending">Pending</span></td>
                             </tr>
                             <tr>
-                                <td>9:00 PM - 10:00 PM</td>
+                                <td><strong>BKG54109</strong></td>
+                                <td>Green Field</td>
+                                <td>27 Oct 2026</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td>Arif Rahman</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG43012</strong></td>
                                 <td>Play Arena</td>
-                                <td>Saif Karim</td>
-                                <td><span class="badge badge-pending">Pending Confirmation</span></td>
-                                <td><a href="bookings.html" class="btn btn-sm">Confirm Booking &raquo;</a></td>
+                                <td>25 Oct 2026</td>
+                                <td>9:00 PM - 10:00 PM</td>
+                                <td>Mahmudul Hasan</td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
                             </tr>
                         </tbody>
                     </table>
+                    <p><a href="bookings.html">View all bookings &raquo;</a></p>
                 </section>
+
                 <section class="card">
-                    <h3 class="card-title">Manager Duties &amp; Quick Links</h3>
+                    <h3 class="card-title">Quick Admin Actions</h3>
                     <ul>
-                        <li><a href="check-in.html">Verify Player Arrival &amp; Process Check-in</a></li>
-                        <li><a href="manage-slots.html">View &amp; Manage Hourly Slot Availability</a></li>
-                        <li><a href="bookings.html">Review Pending Match Booking Requests</a></li>
-                        <li><a href="schedule.html">Inspect Full Day Facility Schedule</a></li>
+                        <li><a href="turf-pricing.html">+ Add a New Turf Ground</a></li>
+                        <li><a href="staff-users.html">+ Create Turf Manager or Staff Account</a></li>
+                        <li><a href="payments.html">View Revenue &amp; Payment Status</a></li>
+                        <li><a href="reports.html">Generate Monthly Summary Report</a></li>
                     </ul>
                 </section>
-                <footer class="empty-state">&copy; 2026 TurfGo - Turf Manager Portal (Basic HTML Version).</footer>
+
+                <footer class="empty-state">&copy; 2026 TurfGo - Administrator Portal (Basic HTML Version).</footer>
             </main>
         </div>
     </div>
