@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bookings - TurfGo Player</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="theme-player">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="book-turf.html">Book Turf</a>
+                <a href="my-bookings.html" class="active">My Bookings</a>
+                <a href="profile.html">Profile</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">My Bookings</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Player</span>
+                    <span>Rifat Hasan</span>
+                    <div class="avatar">RH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>My Match Bookings &amp; History</h1>
+                </div>
+                <div class="tab-bar">
+                    <a href="my-bookings.html?status=all" class="active">All Matches (4)</a>
+                    <a href="my-bookings.html?status=upcoming">Upcoming Confirmed (2)</a>
+                    <a href="my-bookings.html?status=completed">Completed (1)</a>
+                    <a href="my-bookings.html?status=cancelled">Cancelled (1)</a>
+                </div>
+                <section class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking ID</th>
+                                <th>Turf Ground</th>
+                                <th>Match Date</th>
+                                <th>Time Slot</th>
+                                <th>Total Cost</th>
+                                <th>Booking Status</th>
+                                <th>Payment Status</th>
+                                <th>Player Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>BKG98214</strong></td>
+                                <td>Green Field (Mirpur)</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td><span class="badge badge-unpaid">Unpaid (Pay at Desk)</span></td>
+                                <td>
+                                    <form action="my-bookings.html" method="POST">
+                                        <input type="hidden" name="cancel_id" value="98214">
+                                        <input type="submit" value="Cancel Booking" class="btn btn-danger btn-sm">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG81923</strong></td>
+                                <td>Play Arena (Uttara)</td>
+                                <td>30 Oct 2026</td>
+                                <td>7:00 PM - 8:00 PM</td>
+                                <td>৳1,500.00</td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td><span class="badge badge-unpaid">Unpaid (Pay at Desk)</span></td>
+                                <td>
+                                    <form action="my-bookings.html" method="POST">
+                                        <input type="hidden" name="cancel_id" value="81923">
+                                        <input type="submit" value="Cancel Booking" class="btn btn-danger btn-sm">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG71024</strong></td>
+                                <td>Victory Turf (Banani)</td>
+                                <td>19 Oct 2026</td>
+                                <td>8:00 PM - 9:00 PM</td>
+                                <td>৳1,000.00</td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                                <td><span class="badge badge-paid">Paid (Cash)</span></td>
+                                <td>
+                                    <em>Match Finished</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>BKG62910</strong></td>
+                                <td>Green Field (Mirpur)</td>
+                                <td>12 Oct 2026</td>
+                                <td>5:00 PM - 6:00 PM</td>
+                                <td>৳1,200.00</td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                                <td><span class="badge badge-cancelled">Cancelled</span></td>
+                                <td>
+                                    <em>Cancelled by Player</em>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="card">
+                    <p>Want to book another match? <a href="book-turf.html">Browse available grounds &raquo;</a></p>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Player Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

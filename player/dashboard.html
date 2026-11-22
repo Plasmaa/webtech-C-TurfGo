@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Dashboard - TurfGo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="theme-player">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="book-turf.html">Book Turf</a>
+                <a href="my-bookings.html">My Bookings</a>
+                <a href="profile.html">Profile</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Player Dashboard</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Player</span>
+                    <span>Rifat Hasan</span>
+                    <div class="avatar">RH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <div>
+                        <h1>Hello, Rifat Hasan! ⚽</h1>
+                        <p>Welcome back to TurfGo. Book your grounds, view upcoming match times, and check your booking history.</p>
+                    </div>
+                </div>
+                <section class="card">
+                    <h3 class="card-title">Next Upcoming Match</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Turf Ground</th>
+                                <th>Location</th>
+                                <th>Match Date</th>
+                                <th>Time Slot</th>
+                                <th>Booking ID</th>
+                                <th>Status</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Green Field</strong></td>
+                                <td>Mirpur, Dhaka</td>
+                                <td>26 Oct 2026</td>
+                                <td>6:00 PM - 7:00 PM</td>
+                                <td><strong>BKG98214</strong></td>
+                                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                                <td><a href="my-bookings.html" class="btn btn-sm">View Booking &raquo;</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="card">
+                    <h3 class="card-title">Quick Actions</h3>
+                    <p>
+                        <a href="book-turf.html" class="btn">🏟️ Book a New Turf Slot</a>
+                        <a href="my-bookings.html" class="btn">📅 View All My Bookings</a>
+                        <a href="profile.html" class="btn">👤 Update Profile Details</a>
+                    </p>
+                </section>
+                <section class="card">
+                    <h3 class="card-title">TurfGo Player Notice Board &amp; Rules</h3>
+                    <ul>
+                        <li>Please arrive at the ground at least <strong>15 minutes</strong> prior to your reserved slot for check-in.</li>
+                        <li>Proper turf shoes or studs are strictly mandatory on synthetic grass surfaces.</li>
+                        <li>Payment can be made in cash at the counter or via mobile banking upon arrival.</li>
+                        <li>Cancellations are allowed up to 4 hours prior to the match start time.</li>
+                    </ul>
+                </section>
+                <footer class="empty-state">&copy; 2026 TurfGo - Player Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

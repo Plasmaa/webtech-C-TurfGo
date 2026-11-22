@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Turf - TurfGo Player</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="theme-player">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-logo">⚽ TurfGo</div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="book-turf.html" class="active">Book Turf</a>
+                <a href="my-bookings.html">My Bookings</a>
+                <a href="profile.html">Profile</a>
+                <a href="../index.html">Main Index</a>
+                <a href="../logout.html">Logout</a>
+            </nav>
+        </aside>
+        <div class="main">
+            <header class="topbar">
+                <div class="topbar-title">Book Turf</div>
+                <div class="topbar-user">
+                    <span class="role-badge">Player</span>
+                    <span>Rifat Hasan</span>
+                    <div class="avatar">RH</div>
+                </div>
+            </header>
+            <main class="content">
+                <div class="page-header">
+                    <h1>Select Ground &amp; Reserve Time Slot</h1>
+                </div>
+                <form action="book-turf.html" method="GET" class="filter-bar">
+                    <label for="book_date"><strong>Date of Play:</strong></label>
+                    <input type="date" id="book_date" name="date" value="2026-10-26">
+                    <input type="submit" value="Check Ground Availability" class="btn">
+                </form>
+                <div class="turf-grid">
+                    <div class="turf-card">
+                        <h3>1. Green Field - Mirpur, Dhaka</h3>
+                        <div class="loc"><strong>Location:</strong> Section 2, Mirpur, Dhaka | <strong>Surface:</strong>
+                            FIFA-grade 5-a-side artificial turf</div>
+                        <div class="price">৳1,200.00 / hour</div>
+                        <div class="slot-grid">
+                            <div class="slot slot-available">
+                                <div class="time">4:00 PM - 5:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="1">
+                                    <input type="hidden" name="turf_name" value="Green Field">
+                                    <input type="hidden" name="slot" value="16:00">
+                                    <input type="hidden" name="price" value="1200">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">5:00 PM - 6:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="1">
+                                    <input type="hidden" name="turf_name" value="Green Field">
+                                    <input type="hidden" name="slot" value="17:00">
+                                    <input type="hidden" name="price" value="1200">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-booked">
+                                <div class="time">6:00 PM - 7:00 PM</div>
+                                Booked
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">7:00 PM - 8:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="1">
+                                    <input type="hidden" name="turf_name" value="Green Field">
+                                    <input type="hidden" name="slot" value="19:00">
+                                    <input type="hidden" name="price" value="1200">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">8:00 PM - 9:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="1">
+                                    <input type="hidden" name="turf_name" value="Green Field">
+                                    <input type="hidden" name="slot" value="20:00">
+                                    <input type="hidden" name="price" value="1200">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="turf-card">
+                        <h3>2. Victory Turf - Banani, Dhaka</h3>
+                        <div class="loc"><strong>Location:</strong> Road 11, Banani, Dhaka | <strong>Surface:</strong>
+                            6-a-side floodlit astro turf</div>
+                        <div class="price">৳1,000.00 / hour</div>
+                        <div class="slot-grid">
+                            <div class="slot slot-available">
+                                <div class="time">5:00 PM - 6:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="2">
+                                    <input type="hidden" name="turf_name" value="Victory Turf">
+                                    <input type="hidden" name="slot" value="17:00">
+                                    <input type="hidden" name="price" value="1000">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">6:00 PM - 7:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="2">
+                                    <input type="hidden" name="turf_name" value="Victory Turf">
+                                    <input type="hidden" name="slot" value="18:00">
+                                    <input type="hidden" name="price" value="1000">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-booked">
+                                <div class="time">7:00 PM - 8:00 PM</div>
+                                Booked
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">8:00 PM - 9:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="2">
+                                    <input type="hidden" name="turf_name" value="Victory Turf">
+                                    <input type="hidden" name="slot" value="20:00">
+                                    <input type="hidden" name="price" value="1000">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="turf-card">
+                        <h3>3. Play Arena - Uttara, Dhaka</h3>
+                        <div class="loc"><strong>Location:</strong> Sector 7, Uttara, Dhaka | <strong>Surface:</strong>
+                            Premium 7-a-side hybrid grass with dugout</div>
+                        <div class="price">৳1,500.00 / hour</div>
+                        <div class="slot-grid">
+                            <div class="slot slot-available">
+                                <div class="time">6:00 PM - 7:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="3">
+                                    <input type="hidden" name="turf_name" value="Play Arena">
+                                    <input type="hidden" name="slot" value="18:00">
+                                    <input type="hidden" name="price" value="1500">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-available">
+                                <div class="time">7:00 PM - 8:00 PM</div>
+                                <form action="my-bookings.html" method="POST">
+                                    <input type="hidden" name="turf_id" value="3">
+                                    <input type="hidden" name="turf_name" value="Play Arena">
+                                    <input type="hidden" name="slot" value="19:00">
+                                    <input type="hidden" name="price" value="1500">
+                                    <input type="submit" value="Book This Slot" class="btn btn-sm">
+                                </form>
+                            </div>
+                            <div class="slot slot-booked">
+                                <div class="time">8:00 PM - 9:00 PM</div>
+                                Booked
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="empty-state">&copy; 2026 TurfGo - Player Portal (Basic HTML Version).</footer>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
